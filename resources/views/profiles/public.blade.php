@@ -12,7 +12,7 @@
     <div class="p-8 rounded-lg">
         <div class="flex w-full flex-col items-center">
             <div class="flex items-center">
-                <img src="{{ $user->avatar ? url('storage/' . auth()->user()->avatar) : 'https://ui-avatars.com/api/?name=' . auth()->user()->name }}" alt="{{ auth()->user()->name }}" class="w-20 h-20 rounded-full border-2">
+                <img src="{{ auth()->user()->avatar ? url('storage/' . auth()->user()->avatar) : 'https://ui-avatars.com/api/?name=' . $user->name }}" alt="{{ $user->name }}" class="w-20 h-20 rounded-full border-2">
             </div>
             <div>
                 <h2 class="text-xl font-bold">{{ $user->name }}</h2>
