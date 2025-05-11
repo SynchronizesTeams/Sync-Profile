@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
-<body class="bg-[#c6ffc6]">
+<body class="bg-[#c6ffc6] ">
     <div class="p-8 rounded-lg">
         <div class="flex w-full flex-col items-center">
             <div class="flex items-center">

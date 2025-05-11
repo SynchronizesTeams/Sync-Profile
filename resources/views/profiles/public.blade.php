@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
+    <title>{{ $user->name }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 <body class="bg-[#c6ffc6]">
     <div class="p-8 rounded-lg">
         <div class="flex w-full flex-col items-center">
-            <div class="flex items-center">
-                <img src="{{ $user->avatar ? url('storage/' . $user->avatar) : 'https://ui-avatars.com/api/?name=' . $user->name }}" alt="{{ $user->name }}" class="w-20 h-20 rounded-full border-2">
+            <div class="flex items-center ">
+                <img src="{{ $user->avatar ? url('storage/' . $user->avatar) : 'https://ui-avatars.com/api/?name=' . $user->name }}" alt="{{ $user->name }}" class="w-20 h-20 rounded-full border-2 object-cover">
             </div>
             <div>
                 <h2 class="text-xl font-bold">{{ $user->name }}</h2>
