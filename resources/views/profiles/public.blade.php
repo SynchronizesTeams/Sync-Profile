@@ -11,11 +11,11 @@
 <body class="bg-[#c6ffc6]">
     <div class="p-8 rounded-lg">
         <div class="flex w-full flex-col items-center">
-            <div class="w-20 h-20 overflow-hidden rounded-full border-2">
+            <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-gray-300">
                 <img
                     src="{{ $user->avatar ? url('storage/' . $user->avatar) : 'https://ui-avatars.com/api/?name=' . urlencode($user->name) }}"
                     alt="{{ $user->name }}"
-                    class="w-full h-full object-cover object-center"
+                    class="w-full h-full object-cover"
                 >
             </div>
             <div>
