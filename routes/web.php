@@ -5,7 +5,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::redirect('/', '/register');
+Route::redirect('/', '/login');
 Route::get('/{username}', [ProfileController::class, 'show'])
     ->where('username', '^(?!login|register|dashboard|profile).*$');
 
