@@ -5,10 +5,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 
+Route::redirect('/', '/register');
 Route::get('/{username}', [ProfileController::class, 'show'])
     ->where('username', '^(?!login|register|dashboard|profile).*$');
 
-Route::redirect('/', '/register');
 
 Route::get('/login', function () {
     return view('auth/login');
